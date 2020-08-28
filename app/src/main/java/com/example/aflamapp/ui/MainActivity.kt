@@ -1,7 +1,8 @@
-package com.example.aflamapp
+package com.example.aflamapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.aflamapp.R
 import com.example.aflamapp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {

@@ -1,71 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent" android:layout_height="wrap_content">
-    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
         <androidx.cardview.widget.CardView
-                android:layout_margin="16dp"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp">
-            
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp">
+
             <ImageView
-                    android:id="@+id/iv_trailer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"/>
-        
-        </androidx.cardview.widget.CardView>
-        
-        <LinearLayout
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                android:orientation="vertical"
+                android:id="@+id/iv_trailer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
-            
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/poster" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <TextView
-                    android:id="@+id/tv_name"
-                    android:textSize="16sp"
-                    android:text="@string/app_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-    
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="16sp" />
+
             <TextView
-                    android:textSize="12sp"
-                    android:id="@+id/tv_site"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/app_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-    
-    
+                android:id="@+id/tv_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/app_name"
+                android:textSize="12sp" />
+
+
             <TextView
-                    android:textSize="12sp"
-                    android:id="@+id/tv_size"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/app_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/app_name"
+                android:textSize="12sp" />
+
         </LinearLayout>
-    
+
     </LinearLayout>
-    
-    
+
+
     <View
-            android:layout_margin="16dp"
-            android:background="@color/colorGrey"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/colorGrey" />
 
 </LinearLayout>

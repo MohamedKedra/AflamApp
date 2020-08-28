@@ -1,4 +1,4 @@
-package com.example.aflamapp
+package com.example.aflamapp.ui.details
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.aflamapp.R
 
 class DetailsFragment : Fragment() {
 
@@ -24,8 +25,7 @@ class DetailsFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(DetailsViewModel::class.java)
-        // TODO: Use the ViewModel
+//        viewModel = ViewModelProviders.of(this).get(DetailsViewModel::class.java)
     }
 
 }
