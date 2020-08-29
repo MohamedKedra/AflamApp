@@ -3,20 +3,13 @@ package com.example.aflamapp.ui.main
 import com.example.aflamapp.Data.Models.MovieResponse
 import com.example.aflamapp.Data.Network.ClientApi
 import com.example.aflamapp.Data.Utils
-import io.reactivex.Observable
+import io.reactivex.Single
+import javax.inject.Inject
 
-class MainRepository {
+class MainRepository @Inject constructor(private val api: ClientApi) {
 
-    lateinit var api: ClientApi
+    fun getListMovies(): Single<MovieResponse> {
 
-    fun getListMovies(type: String): Observable<MovieResponse> {
-
-        return if (type == Utils.Popular) {
-
-            api.getPopularMovies(Utils.key)
-        }else{
-
-            api.getTopMovies(Utils.key)
-        }
+        return api.getPopularMovies(Utils.key)
     }
 }
