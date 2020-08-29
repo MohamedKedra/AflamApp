@@ -32,7 +32,7 @@ class MovieAdapter(private val onMovieClickListener: OnMovieClickListener<Movie>
 
     override fun onBindViewHolder(holder: MovieHolder, position: Int) {
 
-        Glide.with(context).load(Utils.ImageBase + movies[position].poster).into(holder.poster)
+        Glide.with(context).load(Utils.posterImageUrl.plus(movies[position].poster)).into(holder.poster)
         holder.title.text = movies[position].title
     }
 
